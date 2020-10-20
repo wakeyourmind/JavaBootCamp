@@ -1,5 +1,5 @@
 package sef.module6.activity;
-
+import sef.module6.sample.*;
 
 
 public class InheritanceActivity {
@@ -7,12 +7,15 @@ public class InheritanceActivity {
 	public static void main(String[] args) {
 		
 		// Create Person object p. Write code to and set name of Person as Sarah Johnson
+		Person_I p = new Person_I("Sarah Johnson", 21);
+		
 		// and age as 21
 		
 		
 		
 		System.out.println("-----------------------------");
 		//Create Employee object e and 
+		Employee_A e = new Employee_A("Shawn Cun","Developer",70000,32);
 		// set salary as 70000, title as Developer, age as 32 and name as Shawn Cun
 		
 		

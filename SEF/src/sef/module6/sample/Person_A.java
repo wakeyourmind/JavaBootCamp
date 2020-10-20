@@ -6,7 +6,7 @@ public abstract class Person_A{
 		
 	// default constructor
 	public Person_A(){
-		System.out.println("I am a Person_A Constructor");
+		System.out.println("INFO");
 	}
 	
 	//abstract methods have no implementation
