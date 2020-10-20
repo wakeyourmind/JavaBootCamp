@@ -8,22 +8,27 @@ package sef.module4.activity;
  *
  */
 
-public class datastruc{
+/*public class datastruc{
 	
-	int ,
+	int x, y ,
 	float,
 	long, 
 	string, 
 	 
 }
+*/
 public class Calculator {
+
+	
 
 	
 	private String calculatorType;
 	public static final String CALC_TYPE_BASIC = "Basic";
 	
 	// Default constructor
-	public Calculator() {}
+	public Calculator() {
+	
+		}
 	
 	// Parameterized constructor
 	public Calculator(String calculatorType) {
@@ -41,7 +46,7 @@ public class Calculator {
 	}
 	
 	// Add 
-	public int add(object ;) {
+	public int add(int x, int y) {
 		int sum = x + y;
 		return sum;
 	}
