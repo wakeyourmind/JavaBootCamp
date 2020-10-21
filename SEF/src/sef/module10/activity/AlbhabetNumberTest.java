@@ -4,6 +4,8 @@ package sef.module10.activity;
 //First thread prints a number from 1-26 and the other prints alphabets
 //against those numbers 
 
+import sef.module10.activity.AlphaGenerator.Generator;
+
 public class AlbhabetNumberTest {
 	public static void main(String[] args)
 	{

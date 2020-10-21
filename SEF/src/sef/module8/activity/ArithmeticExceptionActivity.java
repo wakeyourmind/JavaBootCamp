@@ -4,7 +4,7 @@ public class ArithmeticExceptionActivity {
 	//1 - Type main method and call catchMe with 10 and 0
 	public static void main(String arg[]){
 	ArithmeticExceptionActivity ccc = new ArithmeticExceptionActivity();
-	ccc.catchMe(10, 0);
+	ccc.catchMe(10, 5);
 	}
 
 void catchMe(int num1, int num2)
