@@ -2,7 +2,7 @@ package sef.module9.sample;
 // Complete Code
 import java.util.Comparator;
 
-class NameComparator implements Comparator{
+class NameComparator implements Comparator<Object>{
 	 
     public int compare(Object emp1, Object emp2){    
  

@@ -10,7 +10,7 @@ public class MapSample {
 	
 	public static void main(String[] args) {
 			
-		Map map = new HashMap();
+		Map<String, Comparable> map = new HashMap<String, Comparable>();
 		map.put("A", "A String");
 		map.put("B", new Date());
 		map.put("C", new Integer(42));
@@ -25,15 +25,15 @@ public class MapSample {
 		new MapSample().print(map);
 		
 	}
-	void print(Map map)
+	void print(Map<String, Comparable> map)
 	{
 		//Keys are maintained as set in map.
-		Set keySet = map.keySet();
+		Set<String> keySet = map.keySet();
 		
 		//You can use an iterator to access keys
 		System.out.println("*************************************");
 		System.out.println("Key\tValue");
-		Iterator it=keySet.iterator();
+		Iterator<String> it=keySet.iterator();
 		while(it.hasNext())
 		{
 			String key=(String)it.next();

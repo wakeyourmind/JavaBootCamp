@@ -44,8 +44,8 @@ class AlphaGenerator extends Thread
 	{
 		
 		//4 - Run a loop from A-Z (say c is the variable) and
-		for(char i='a';i<='z';i++) {
-	        System.out.print(i);
+		for(char c='a';c<='z';c++) {
+	        System.out.print(c);
 		//call printAlbhabet passing c as its parameter
 	
 	}

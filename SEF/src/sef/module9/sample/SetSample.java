@@ -8,17 +8,11 @@ public class SetSample {
 	public static void main(String[] args) {
 		//1 - Create a new HashSet and name it monthSet
 
-		Set monthset = new HashSet();
+		Set<String> monthset = new HashSet<String>();
 		monthset.add("Aaril");
 		monthset.add("January");
 		monthset.add("Februry");
 		monthset.add("March");
-		//monthset.
-//		
-	//monthset.add(4);
-//	/monthset.add(3);
-	///monthset.add(1);
-	//monthset.add(2);
 		
 		
 		System.out.println(monthset.add("January"));
@@ -35,8 +29,8 @@ public class SetSample {
 		//You'd notice that duplicate names are not printed. 
 		print(monthset);
 	}
-	static void print(Set set) {
-		Iterator i = set.iterator();
+	static void print(Set<String> set) {
+		Iterator<String> i = set.iterator();
 		while(i.hasNext()) {
 			System.out.println(i.next());
 		}

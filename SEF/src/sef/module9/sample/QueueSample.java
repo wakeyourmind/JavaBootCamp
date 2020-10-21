@@ -8,7 +8,7 @@ public class QueueSample {
 	 */
 	public void queueExample() {
 
-		Queue queue = new LinkedList();
+		Queue<String> queue = new LinkedList<String>();
 
 		// Using the add method to add items.
 		// Should anything go wrong an exception will be thrown.

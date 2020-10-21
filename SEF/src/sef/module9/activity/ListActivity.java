@@ -9,7 +9,7 @@ public class ListActivity {
 
 	public static void main(String[] args) {
 		//1 - Type code to create a list of names. Use ArrayList.
-		List list = new ArrayList();
+		List<String> list = new ArrayList<String>();
 		list.add("Adrian");
 		list.add("Dmitrijs");
 		list.add("Andrejs");
@@ -19,9 +19,9 @@ public class ListActivity {
 		
 	}
 	
-	void print(List list)
+	void print(List<String> list)
 	{
-		Iterator i = list.iterator();
+		Iterator<String> i = list.iterator();
 		while(i.hasNext()) {
 			System.out.println(i.next());	
 	}
