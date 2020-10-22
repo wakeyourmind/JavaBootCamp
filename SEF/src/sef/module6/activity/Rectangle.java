@@ -5,18 +5,18 @@ public class Rectangle extends Shape {
 	
 	protected double length;
 	protected double breadth;
-	protected String color;
+	//protected String color;
 	
 	public Rectangle(){ 
 		length = 0;
 		breadth = 0;
-		color = "uknown";
+		//color = "uknown";
 	}
 	
-	public Rectangle(double length, double breadth, String color){
+	public Rectangle(double length, double breadth){
 		this.length = length;
 		this.breadth = breadth;
-		this.color = color;
+		//this.color = color;
 	}
 	
 	
@@ -25,10 +25,10 @@ public class Rectangle extends Shape {
 
 	}
 	
-	@Override
+	/*@Override
 	public String color() {
 		return color;
-	}
+	}*/
 	
 	@Override
 	public double calculateArea() {
@@ -37,7 +37,7 @@ public class Rectangle extends Shape {
 
 	@Override
 	public double calculatePerimeter() {
-		return 2 * (length + length);
+		return 2 * (length + breadth);
 	}
 
 }
