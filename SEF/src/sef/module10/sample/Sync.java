@@ -6,12 +6,16 @@ public class Sync implements Runnable{
 		  static String msg[]={"This", "is", "a", "synchronized", "variable"};
 	
 		  public void run(){
+		
 		  display();
-		  }
-		  
-		  public void display(){
-			//1 - create a for loop which runs from 0-4 
 			  
+			  }
+		  
+		 synchronized public void display(){
+			//1 - create a for loop which runs from 0-4 
+			  for (int i=0; i<=4;i++) {
+				  System.out.println(msg[i] + Thread.currentThread().getName());
+			  }
 			//2 - print the name of the thread along with the array elements
 		  
 		  try{
