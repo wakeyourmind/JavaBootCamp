@@ -30,7 +30,7 @@ class NumGenerator extends Thread
 	public void run()
 	{
 		//3 - Run a loop from 1-26 (say i is the variable) and
-	//	for (int i =1;i<=26;i++)
+		for (int i =1;i<=26;i++)
 			//printNumber(i);
 		//call printNumber passing i as its parameter 
 	}
@@ -47,14 +47,14 @@ class AlphaGenerator extends Thread
 	{
 		
 		//4 - Run a loop from A-Z (say c is the variable) and
-		//for(char c='a';c<='z';c++) 
-	     // printAlbhabet(c);
+		for(char c='a';c<='z';c++) {
+	      //  printAlbhabet(c);
 		//call printAlbhabet passing c as its parameter
 	
-	
+	}
 }
 
-public class Generator {
+class Generator {
 	boolean numPrinted = false;
 	public synchronized void printNumber(int number)
 	{
@@ -77,8 +77,7 @@ public class Generator {
 		//9 - Check if numPrinted is false, then call wait()
 		if (numPrinted == false)
 			wait();
-		
-	
+
 		//10 - print the alphabet here
 
 		
