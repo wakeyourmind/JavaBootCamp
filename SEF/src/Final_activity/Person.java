@@ -9,6 +9,11 @@ public class Person {
 			Person pt = new Person();
 			pt.setAge(50);
 			pt.setName("Locky55");
+			/*
+			 *I tried to do it through exceptions(try, catch and throws)... 
+			 *in various ways, but I did not succeed. 
+			 *I did the usual method of verification that we should call (isStringOnlyAlphabet).
+			 * */
 			System.out.println( "String doesn't contain a numbers it's : " + isStringOnlyAlphabet(pt.name));
 			pt.introducePerson();
 	
@@ -35,19 +40,13 @@ public class Person {
 			return name;
 	}
 	
-	
-	
+	//Method of verification
 	public static boolean isStringOnlyAlphabet(String name) 
 	{ 
-	    
 		return ((!name.equals("")) 
 	            && (name != null) 
 	            && (name.matches("^[a-zA-Z]*$"))); 
-
 	} 
-
-
-	
 
 	
 	public final void setName(String name) {
@@ -55,8 +54,6 @@ public class Person {
 		
 	}
 		
-	
-
 	public int getAge() {
 		return age;
 	}

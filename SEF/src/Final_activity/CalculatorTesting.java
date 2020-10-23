@@ -37,9 +37,7 @@ public void testGetSum() {
 		
 		int a = 3;
 		int b = 2;		
-		//	Checks if b is lesser than a
 		assertEquals(1, (Theñalculator.getDifference(a,b)));		
-		//	Checks if b is greater than a
 		assertEquals(-1, (Theñalculator.getDifference(b,a)));
 
 		a = 5;

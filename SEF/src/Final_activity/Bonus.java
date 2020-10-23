@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Bonus {
-
+//Sort by name
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Employee emp1 = new Employee("Denis", 30, "Test Manager", "Sunlight", 2000);
