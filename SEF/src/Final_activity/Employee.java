@@ -2,7 +2,7 @@ package Final_activity;
 
 
 
-public class Employee {
+public class Employee extends Humanity {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -10,6 +10,10 @@ public class Employee {
 		Employee emp2 = new Employee("Maris", 35, "QA engineer", "Google", 1250);
 		Employee emp3 = new Employee("Atto", 20, "System developer", "IBM", 2500);
 		Employee emp4 = new Employee("Jack", 25, "GameDev", "Epic Games", 3000);
+		emp1.setHeight(1.77);
+		emp2.setHeight(1.50);
+		emp3.setHeight(1.90);
+		emp4.setHeight(2.01);
 		emp1.introduceEmployee();
 		emp2.introduceEmployee();
 		emp3.introduceEmployee();
@@ -82,7 +86,8 @@ public class Employee {
 	
 	public void introduceEmployee() {
 		System.out.println("\nMy name is " + name + " and i am " + age + " years old"
-		+ "\nI am work as " + jobTitle + " in a " + company);
+		+ "\nI am work as " + jobTitle + " in a " + company 
+		+ "\nAnd my height is: " + Hheight);
 	}
 
 	
