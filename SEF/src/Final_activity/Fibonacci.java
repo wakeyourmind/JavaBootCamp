@@ -28,6 +28,7 @@ public class Fibonacci {
 		// TODO Auto-generated method stub
 		 
 		System.out.println("Enter your value: ");
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		int N = scan.nextInt();
 	
